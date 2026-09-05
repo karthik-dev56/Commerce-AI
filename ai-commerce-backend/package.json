@@ -1,0 +1,42 @@
+{
+  "name": "ai-commerce-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@algolia/client-analytics": "^5.57.0",
+    "@algolia/recommend": "^5.57.0",
+    "@cedar-policy/authorization-for-expressjs": "^0.3.0",
+    "@google/genai": "^2.21.0",
+    "@medusajs/js-sdk": "^2.20.1",
+    "ajv": "^8.20.0",
+    "algoliasearch": "^5.57.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "google-auth-library": "^11.0.2",
+    "pg": "^8.23.0",
+    "razorpay": "^2.9.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^26.4.1",
+    "@types/pg": "^8.23.1",
+    "drizzle-kit": "^0.31.10",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

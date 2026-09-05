@@ -1,0 +1,39 @@
+{
+  "": {
+    "entityTypes": {
+      "Agent": {
+        "memberOfTypes": []
+      },
+      "Cart": {
+        "memberOfTypes": []
+      }
+    },
+    "actions": {
+      "CREATE_PAYMENT": {
+        "memberOf": [],
+        "appliesTo": {
+          "principalTypes": ["Agent"],
+          "resourceTypes": ["Cart"],
+          "context": {
+            "type": "Record",
+            "attributes": {
+              "mandateActive": {
+                "type": "Boolean",
+                "required": true
+              },
+              "cartMatchesMandate": {
+                "type": "Boolean",
+                "required": true
+              },
+              "amountWithinLimit": {
+                "type": "Boolean",
+                "required": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "commonTypes": {}
+  }
+}
